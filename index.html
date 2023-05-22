@@ -1,94 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <style>
+    /* CSS cho navbar */
+    .app {
+        width: 100%;
+    }
+    .wrapper {
+        
+        margin-left: 200px;
+    }
+    .container {
+        padding: 0 80px;
+    }
+    .navbar_wrapper {
+        width: 200px;
+        position: relative;
+    }
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #000;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      top: 0px;
+      left: 0px;
+    }
+    
+    ul.navbar li {
+      display: block;
+      color: #f1f1f1;
+      padding: 8px 16px;
+      border-bottom: 1px solid #5C5C5C;
+      text-decoration: none;
+    }
+    
+    ul.navbar li a {
+      display: block;
+      color: #f1f1f1;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    ul.navbar li:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    .content-image {
+      display: block;
+      margin: 0 auto;
+      height: 122px;
+      width: 310px;
+      border-radius: 0px;
+    }
+    .main-content {
+      position: absolute;
+      top: 1110px;
+      left: 279px;
+      width: 1510px;
+      height: 210px;
+      background-color: #EFEFEF;
+      margin-left: 20px;
+      padding: 0px;
+    
+    }
+
+    .main-ak {
+      background-color: #EFEFEF;
+      padding: 38px 70px;
+      margin: 20px 0;
+    
+    }
+    /* .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 16px;
+    } */
+    .okk{
+        font-family: Roboto;
+        margin: 0px 0 20px 0;
+        font-size: 18px;
+        text-align: center;
+        
+    }
+
+    .okkk {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+     
+      vertical-align: middle;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .feature-layout {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* PC, Tablet */
+@media (min-width: 740px) {
+    .feature-layout {
+        flex-direction: row;
+    }
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+
+.footer {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 250px;
+    position: relative;
+    padding: 10px 80px;
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: -10px;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+}
+.year {
+    display: inline-block;
+}
+
+
+.form-container {
+max-width: 720px;
+padding: 32px;
+margin: 36px auto 0 auto;
+background-color: #fff;
+}
+</style>
 </head>
-
 <body>
-  <div class="grid-container">
-    <div class="navbar">
-      <ul class="list-menu">
-        <li class="items"><a href="#">Home</a></li>
-        <li class="items"><a href="#">Services</a></li>
-        <li class="items"><a href="#">News</a></li>
-        <li class="items"><a href="#">Blog</a></li>
-        <li class="items"><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <div class="img">
-        <img class="content-image flex mx-auto" src="logoNCC.png" alt="Image">
-      </div>
-      <div class="main-content">
-        <h1 class="tile-main">Lorem ipsum dolor sit asmet?</h1>
-        <p class="content-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat
-          placerat.
-          Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis.
-          Nam facilisis,
-          ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam
-          augue.
-          Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque
-          suscipit maximus
-          vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu. Donec vulputate odio
-          neque, sed
-          semper turpis pellentesque a.</p>
-      </div>
-      <div class="from-container">
-        <div class="feature-layout">
-          <div class="feature-item">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p><img src="css-icon1.png" align="left">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Sed non dui
-              sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean
-              consequat condimentum
-              velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam
-              egestas nunc at </p>
-
-            <p>ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean
-              consequat
-              condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices
-              vestibulum
-              mattis.</p>
-          </div>
-          <div class="feature-item">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p><img src="html-icon.png " align="left">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Sed non dui
-              sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean
-              consequat condimentum
-              velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam
-              egestas nunc at </p>
-            <p>ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean
-              consequat
-              condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices
-              vestibulum
-              mattis.</p>
-          </div>
-          <div class="feature-item">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p><img src="url-icon.png" align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed non dui
-              sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean
-              consequat condimentum
-              velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam
-              egestas nunc at </p>
-            <p>ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean
-              consequat
-              condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices
-              vestibulum
-              mattis.</p>
-          </div>
-
+  <!-- Navbar -->
+    <div class="app">
+        <div class="navbar_wrapper">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-      </div>
+        <div class="wrapper">
+            <div class="container">
 
+                <div  class="logo">
+                    <img class="content-image" src="logoNCC.png" alt="Image">
+                </div>
+
+                <div class="main-ak">
+                    <h1 class= "okk">Lorem ipsum dolor sit asmet?</h1>
+                    <p class="okkk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat. Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu. Donec vulputate odio neque, sed semper turpis pellentesque a.</p>
+                </div>
+
+                <div class ="from-container" >
+                    <div class="feature-layout">
+                        <div class="feature-item">
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p><img src="css-icon1.png" align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p><img src="html-icon.png " align = "left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p><img src="url-icon.png" align = "left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <!-- Coppyright&copy 2021 -->
+                Copyright
+                <span>&copy;</span>
+                <span class="year">2021</span>
+            </footer>
+        </div>
+        
     </div>
-  </div>
 </body>
-
 </html>
